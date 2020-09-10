@@ -70,6 +70,7 @@
     display: none;
 }
 
+
 /* sm - planshet*/
 @media(min-width: 768px) {
     .container {
@@ -130,11 +131,29 @@
         margin-bottom: 25px;
     }
 }
+@media (max-width: 1120px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media(min-width: 1080px) {
+    .search {
+        display: block;
+    }
+}
+@media (min-width: 1120px){
+    .container {
+    max-width: 100%;
+}
+}
+    
+@media (min-width: 1120px){}
+    .container {
+    max-width: 100%;
+}
 /* md - laptop */
 @media(min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+    
     .col-md-1 {
         flex: 0 0 8.3334%;
         max-width: 8.3334%;
@@ -183,17 +202,9 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .search {
-        display: block;
-    }
     .slide p {
         width: 650px;
     }
-    .main-buttons button {
-        margin: 20px 10px;
-    }
-  
-  
 }
 /* lg */
 @media(min-width: 1200px) {
