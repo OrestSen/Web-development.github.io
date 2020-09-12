@@ -154,10 +154,81 @@ color: #fff;
     font-size: 20px;
     border-radius: 5px;
 }
+.main-buttons a {
+    color: white;
+}
 .main-buttons button:hover {
     border: 2px solid #00897b;
     background-color: #00897b;
 }
+.modal {
+    position: fixed;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.btn-close {
+    text-align: right;
+    cursor: pointer;
+}
+.modal input::placeholder {
+    color: black;
+}
+
+.modal-block {
+    width: 300px;
+    margin: auto;
+    border: 1px solid grey;
+    padding: 15px;
+    background-color: white;
+    box-shadow: inset 0 0 2px grey;
+    color: black;
+}
+
+.form__box label {
+    line-height: 36px;
+}
+
+.form__box label, .form__box input, .form__box textarea {
+    display: block;
+    width: 100%;
+    color: #282828;
+}
+.form__box textarea {
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    height: 60px;
+    resize: none;
+}
+.form__box input {
+    border: 1px solid #e6e6e6;
+    padding: 0px 10px;
+    height: 40px;
+}
+.form__box button {
+    display: flow-root;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 1px grey;
+    outline: none;
+}
+
+.form__box button:hover {
+     background-color: #00897b;
+     color: white;
+}
+
 /* ******************************************************************************************* */
 .about-us {
     height: 675px;
@@ -565,11 +636,6 @@ div li:hover > .drop-down2 {
     opacity: 1;
     transform: scaleY(1);
 }
-
-.menu li:hover a {
-    background-color: black;
-    color: #ebeff6;
-} 
 
 .drop-down2 > li > a:hover { 
     background-color: #ebeff6;
