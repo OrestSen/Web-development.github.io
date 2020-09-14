@@ -306,11 +306,12 @@
     }
     .drop-down1 {
         position: absolute;
-        left: 100px;
+        right: 0px;
     }
     .drop-down2 {
         position: absolute;
-        left: 100px;
+        right: 0px;
+        
     }
   
 }
