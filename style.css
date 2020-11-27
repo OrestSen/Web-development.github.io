@@ -160,13 +160,14 @@ color: #fff;
     border-radius: 5px;
 }
 .main-buttons a {
-    color: white;
+    color: white!important;
+    text-decoration: none!important;
 }
 .main-buttons button:hover {
     border: 2px solid #00897b;
     background-color: #00897b;
 }
-.modal_1 {
+.modal {
     position: fixed;
     top: 250px;
     left: 0;
@@ -646,4 +647,16 @@ div li:hover > .drop-down2 {
 .drop-down2 > li > a:hover { 
     background-color: #ebeff6;
     color: black;
+}
+.btn {
+    padding: 0;
+    
+}
+
+.btn-primary {
+    position: relative;
+    right: -30px;
+}
+.form-froup {
+    margin: 1px;
 }
