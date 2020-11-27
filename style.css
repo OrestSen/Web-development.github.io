@@ -123,10 +123,15 @@ color: #fff;
 }
 
 .main {
-    height: 660px;
-    width: 100%;
-    background: url(images/foto.png) no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: url(images/foto.jpg) no-repeat;
     background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
     color: white;
     justify-content: center;
     display: flex;
@@ -494,6 +499,7 @@ color: #fff;
 
 /* ************************************************* */
 .team {
+    height: 100vh;
     flex-direction: column;
     text-align: center;
     line-height: 30px;
@@ -504,7 +510,7 @@ color: #fff;
 }
 
 .team h1 {
-    margin: 100px 0 10px;
+    margin: 200px 0 10px;
     font-size: 30px;
     font-weight: 800;
 }

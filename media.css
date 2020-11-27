@@ -348,8 +348,8 @@
         top: 0;
         right: 0;
         bottom: 0;
-        width: 280px;
-        max-width: 280px;
+  
+        max-width: 200px;
         transform: translateX(150%);
         transition: all 500ms ease-in-out;
         justify-content: center;

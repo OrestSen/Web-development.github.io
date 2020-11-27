@@ -11,9 +11,13 @@ $(document).ready(function(){
 
 
 
+  $('#modal').on('shown.bs.modal', function () {
+    $('#btn-service').trigger('focus')
+  })
+
+
 
 let mobileMenu = document.querySelector(".nav-mobile-menu")
-
 let mainMenu = document.querySelector(".navigation")
 
 mobileMenu.addEventListener("click",function() {
@@ -25,35 +29,62 @@ mobileMenu.addEventListener("click",function() {
     }
 })
 
-
 // *******************************************************************
 
-let showMeMore = document.querySelectorAll(".ourservices-btn");
-let modal = document.querySelector(".modal");
-let btn__close = document.querySelector(".btn-close");
-let send = document.querySelector(".default-btn");
+// let showMeMore = document.querySelectorAll(".ourservices-btn");
+// let modal = document.querySelector(".modal");
+// let btn__close = document.querySelector(".btn-close");
+// let send = document.querySelector(".default-btn");
 
-showMeMore.forEach(function(btn) {
-  btn.addEventListener("click",openModal )
-})
+// showMeMore.forEach(function(btn) {
+//   btn.addEventListener("click",openModal )
+// })
 
-function openModal() {
-  modal.classList.remove("hide")
-  modal.classList.add("show")
-}
-function closeModal() {
-  modal.classList.remove("show")
-  modal.classList.add("hide")
-}
+// function openModal() {
+//   modal.classList.remove("hide")
+//   modal.classList.add("show")
+// }
+// function closeModal() {
+//   modal.classList.remove("show")
+//   modal.classList.add("hide")
+// }
 
-btn__close.addEventListener("click", closeModal)
-send.addEventListener("click", closeModal)
+// btn__close.addEventListener("click", closeModal)
+// send.addEventListener("click", closeModal)
 
-modal.addEventListener("click", function(e) {
-  if (e.target == modal) {
-    closeModal()
-  }
-})
+// modal.addEventListener("click", function(e) {
+//   if (e.target == modal) {
+//     closeModal()
+//   }
+// })
+// ********************************
+
+// let btn_service = document.querySelectorAll(".btn-service");
+// let modal = document.querySelectorAll(".modal");
+// let closeBtn = documnet.querySelectorAll(".btn-close");
+
+
+// btn_service.forEach(function (btn) {
+//   btn.addEventListener("click", openModal);
+// })
+
+// function openModal() {
+//   modal.classList.add("show");
+//   modal.classList.remove("hide");
+// }
+
+// function closeModal() {
+//   modal.classList.add("hide");
+//   modal.classList.remove("show");
+// }
+
+// closeBtn.addEventListener("click", closeModal)
+
+// modal.addEventListener("click", function(e) {
+//   if (e.target == modal) {
+//     closeModal()
+//   }
+// })
 
 // let showMeMore = document.querySelectorAll(".button0");
 // let modal = document.querySelector(".modal")
