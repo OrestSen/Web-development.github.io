@@ -166,7 +166,7 @@ color: #fff;
     border: 2px solid #00897b;
     background-color: #00897b;
 }
-.modal {
+.modal_1 {
     position: fixed;
     top: 250px;
     left: 0;
@@ -499,7 +499,7 @@ color: #fff;
 
 /* ************************************************* */
 .team {
-    height: 100vh;
+    
     flex-direction: column;
     text-align: center;
     line-height: 30px;
