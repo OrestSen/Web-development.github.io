@@ -1,32 +1,28 @@
-$(document).ready(function(){
-  
-    $(".fa-search").click(function(){
-      $(".wrap, .input").toggleClass("active");
-      $("input[type='search']").focus();
-    });
-  
+$(document).ready(function () {
+
+  $(".fa-search").click(function () {
+    $(".wrap, .input").toggleClass("active");
+    $("input[type='search']").focus();
   });
 
-  $('.main-buttons').onePageNav()
+});
 
+$('.main-buttons').onePageNav()
 
-
-  $('#modal').on('shown.bs.modal', function () {
-    $('#btn-service').trigger('focus')
-  })
-
-
+$('#exampleModal').modal({
+  keyboard: true,
+})
 
 let mobileMenu = document.querySelector(".nav-mobile-menu")
 let mainMenu = document.querySelector(".navigation")
 
-mobileMenu.addEventListener("click",function() {
-    mobileMenu.classList.toggle("active-menu");
-    if(mobileMenu.classList.contains("active-menu")) {
-        mainMenu.classList.add("active-menu");
-    } else {
-        mainMenu.classList.remove("active-menu")
-    }
+mobileMenu.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active-menu");
+  if (mobileMenu.classList.contains("active-menu")) {
+    mainMenu.classList.add("active-menu");
+  } else {
+    mainMenu.classList.remove("active-menu")
+  }
 })
 
 // *******************************************************************
@@ -57,34 +53,8 @@ mobileMenu.addEventListener("click",function() {
 //     closeModal()
 //   }
 // })
+
 // ********************************
-
-// let btn_service = document.querySelectorAll(".btn-service");
-// let modal = document.querySelectorAll(".modal");
-// let closeBtn = documnet.querySelectorAll(".btn-close");
-
-
-// btn_service.forEach(function (btn) {
-//   btn.addEventListener("click", openModal);
-// })
-
-// function openModal() {
-//   modal.classList.add("show");
-//   modal.classList.remove("hide");
-// }
-
-// function closeModal() {
-//   modal.classList.add("hide");
-//   modal.classList.remove("show");
-// }
-
-// closeBtn.addEventListener("click", closeModal)
-
-// modal.addEventListener("click", function(e) {
-//   if (e.target == modal) {
-//     closeModal()
-//   }
-// })
 
 // let showMeMore = document.querySelectorAll(".button0");
 // let modal = document.querySelector(".modal")

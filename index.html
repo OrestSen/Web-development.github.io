@@ -509,13 +509,13 @@
         </div>
     </div>
     <footer>
-
         <div class="footer">
             <h2>All rights Reserved © 2020</h2>
         </div>
     </footer>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Modal title</h5>
@@ -524,12 +524,44 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <div class="container-fluid">
+                        <form action="">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-froup">
+                                        <label for="exampleInputEmail" class="">Email Adress</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail"
+                                            aria-describedat="emailHelp" placeholder="Email">
+                                        <small id="emailHelp" class="from-text text-muted">
+                                            Enter your email
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-froup">
+                                        <label for="exampleInputPass">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputpass"
+                                            placeholder="Password">
+                                        <small id="passHelp" class="form-text text-muted">
+                                            The password must be 10 characters long
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class=" btn btn-primary">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+
             </div>
         </div>
     </div>
